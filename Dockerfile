@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y -q ngnix
 COPY ./index.html /usr/share/nginx/html/
 
 # Step:4
-EXPOSE80
+EXPOSE 80
 
 # Step:5
 CMD["nginx", "-g", "daemon off;"]
